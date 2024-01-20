@@ -4,7 +4,7 @@ function calculate() {
     var operation = document.getElementById('operation').value;
     var result;
 
-    switch(operation) {
+    switch (operation) {
         case 'add':
             result = firstNumber + secondNumber;
             break;
@@ -15,8 +15,14 @@ function calculate() {
             result = firstNumber * secondNumber;
             break;
         case 'divide':
+            if(secondNumber === 0){
+                result = 'Infinity';
+                break;
+            }
             result = firstNumber / secondNumber;
             break;
+        default:
+            result = 'Invalid operation';
     }
 
     document.getElementById('result').textContent = result;

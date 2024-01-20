@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -15,57 +15,34 @@ header, footer {
 
 main {
     padding: 20px;
+    text-align: center;
 }
 
 #calculator {
     background-color: white;
-    max-width: 300px;
-    margin: 20px auto;
     padding: 20px;
+    margin: 20px auto;
+    display: inline-block;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
 }
 
-.input-group {
-    margin-bottom: 10px;
-}
-
-.input-group input[type="number"],
-.input-group button {
-    width: calc(50% - 10px);
+#calculator input[type="number"],
+#calculator select {
     padding: 10px;
-    margin: 5px 0;
+    margin: 5px;
     border: 1px solid #ddd;
 }
 
-.select-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.select-group label {
-    margin-right: 10px;
-}
-
-.select-group select {
-    width: 50px; /* Set the width to make it square */
-    height: 50px; /* Set the height to make it square */
-    text-align: center;
-}
-
-#calculator button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
+#calculateButton {
+    padding: 10px 20px;
     background-color: #5cb85c;
     color: white;
+    border: none;
     cursor: pointer;
+    width: auto; /* Adjusted width */
 }
 
-#calculator button:hover {
+#calculateButton:hover {
     background-color: #4cae4c;
 }
 
@@ -73,10 +50,6 @@ main {
     margin-top: 20px;
 }
 
-#results #result {
+#result {
     font-weight: bold;
-}
-
-footer {
-    margin-top: 30px;
 }
