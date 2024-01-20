@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Calculator styles */
+#calculator {
+    background-color: white;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#calculator form > input[type="number"] {
+    width: calc(50% - 12px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+#calculator select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+#calculator button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+#calculator button:hover {
+    background-color: #4cae4c;
+}
+
+/* Results styles */
+#results {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    font-weight: bold;
+}
